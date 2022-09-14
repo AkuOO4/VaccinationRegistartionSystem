@@ -1,6 +1,7 @@
 from typing import Final
 import pandas as pd
 from datetime import date, timedelta
+from dateutil.relativedelta import relativedelta
 import random
 
 column_name=['ID','Name','Age','Gender','Comorbidity','Appointment_date']
@@ -73,7 +74,7 @@ for i in male_namelist:
 
 Final_Data={'ID':[],'Name':[],'Age':[],'Gender':[],'Comorbidity':[],'Appointment_Date':[]}
 
-start=date.today()-timedelta(days=50)
+start=date.today()-relativedelta(months=8)
 
 for i in range (500):
     if i//2==0:
