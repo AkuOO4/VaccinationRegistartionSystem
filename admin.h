@@ -54,7 +54,7 @@ public:
 
 // Static member initializations
 int Admin::age_eligibility = 18;
-int Admin::available_shots = 1;
+int Admin::available_shots = 3;
 string Admin::last_date = "";
 
 bool Admin::verify_password(string pass)
@@ -89,14 +89,14 @@ bool Admin::run_process(CitizenQueueList &cqueue)
 	 * otherwise, the program will have to remain running over several days
 	 * to demonstrate the full functionality, due to use of <ctime>
 	 */
-	/*
+	
 	 cout << "Enter day :";
 	 cin >> day;
 	 cout << "Enter month :";
 	 cin >> month;
 	 cout << "Enter year :";
 	 cin >> year;
-	 */
+	 
 
 	string today = date_string(day, month, year); // The representation of a today's date as a string
 
